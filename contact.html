@@ -26,58 +26,53 @@
   </head>
 
   <body>
-    <div class="product-main">
-      <nav class="nav">
-        <ul class="nav-list">
-          <a href="index.html">
-            <li class="list-item">Home</li>
-          </a>
-          <a href="about.html">
-            <li class="list-item">About</li>
-          </a>
-        </ul>
-      </nav>
+    <section class="section-main">
+      <header class="header">
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="open navigation">
+            <span class="hamburger"></span>
+          </button>
+          <p class="close">X</p>
+          <div class="nav-wrapper"></div>
 
-      <a href="#" alt="">
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </a>
-    </div>
+          <ul class="nav-list">
+            <li class="list-item"><a href="index.html">Home</a></li>
+            <li class="list-item"><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <div class="contact-main">
-      <div>
+      <div class="contact-main">
         <h1 class="contact-title">Contact</h1>
-      </div>
-      <div class="contact-info">
-        <div class="contact-box">
-          <a class="contact-icon" href="mailto:contact@secretlifeofacsi.com"
-            ><i class="far fa-envelope"></i
-          ></a>
-          <a
-            class="contact-icon"
-            href="https://www.instagram.com/secretlifeofacsi/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a class="contact-icon" href="https://twitter.com/Secretlifeofac2"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a class="contact-icon" href="https://pin.it/3doAp3S"
-            ><i class="fab fa-pinterest-p"></i
-          ></a>
-        </div>
 
-        <!--<div class="purchase">
+        <div class="contact-info">
+          <div class="contact-box">
+            <a class="contact-icon" href="mailto:contact@secretlifeofacsi.com"
+              ><i class="far fa-envelope"></i
+            ></a>
+            <a
+              class="contact-icon"
+              href="https://www.instagram.com/secretlifeofacsi/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="contact-icon" href="https://twitter.com/Secretlifeofac2"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="contact-icon" href="https://pin.it/3doAp3S"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+          </div>
+
+          <!--<div class="purchase">
                 <a class="contact-cart purchase-text" href="product.html">Purchase the new book
                     <i class="fas fa-shopping-cart"></i></a>
             </div>-->
+        </div>
+        <div class="download-container">
+          <input type="button" value="Download Sample" onClick="passwd()" />
+        </div>
       </div>
-      <div class="download-container">
-        <input type="button" value="Download Sample" onClick="passwd()" />
-      </div>
-    </div>
+    </section>
 
     <!--Footer-->
     <section class="footer">
