@@ -155,6 +155,7 @@ img {
 .buy:hover {
   color: var(--light-pink-color);
   font-size: 2rem;
+  text-decoration: none;
 }
 
 .fa-book-open {
