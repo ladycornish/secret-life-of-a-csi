@@ -2,6 +2,7 @@ const menu = document.querySelector(".nav-list");
 const menuWrapper = document.querySelector("nav-wrapper");
 const hamburger = document.querySelector(".nav-toggle");
 const closeBtn = document.querySelector(".close");
+const download = document.getElementById("download");
 
 const showMenu = () => {
   hamburger.style.display = "none";
@@ -21,12 +22,15 @@ hamburger.addEventListener("click", showMenu);
 closeBtn.addEventListener("click", hideMenu);
 menuWrapper.addEventListener("click", hideMenu);
 
-const passwd = () => {
+const addPasswd = () => {
+  console.log("clicked");
   const password = prompt("Enter The password to download the file: ");
 
-  if (password.toLowerCase() == "booksample") {
+  if (password == "booksample") {
     window.open("test-sample.pdf");
   } else {
     alert("Incorrent Password!! Please try Again!");
   }
 };
+
+download.addEventListener("click", addPasswd());
